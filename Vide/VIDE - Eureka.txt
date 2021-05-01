@@ -1,0 +1,42 @@
+/* Consigna:
+Escribir un algoritmo que utilice la función provista getEntradaTeclado() para verificar si el valor retornado por la misma, es igual a la clave “eureka”. 
+Solo se tienen tres intentos para acertar. En caso de acertar se debe visualizar el mensaje “Clave correcta” y en caso fallar se debe visualizar el mensaje “Ya no tiene más intentos”, 
+Es importante que el mensaje visualizado se almacene al final en la variable resultado.   */
+
+// Código inicial
+
+let entradaTeclado = [];
+let indice = 0;
+function getEntradaTeclado() {
+ const retorno = entradaTeclado[indice];
+ indice = indice + 1;
+ return retorno;
+}
+let resultado;
+
+entradaTeclado = ["euro", "eureka"];
+
+
+
+// Código implementación
+// Comenza tu implementación en este editor
+let claveIngresada = getEntradaTeclado();
+let intentos = 0;
+
+while (claveIngresada != "eureka" && intentos < 3){
+        claveIngresada = getEntradaTeclado();
+        intentos = intentos + 1;
+}
+ if ( intentos == 3){
+        resultado = "Ya no tiene más intentos";
+}else if(claveIngresada == "eureka"){
+             resultado = "Clave correcta";
+}
+ console.log(resultado);
+
+/* Reporte de Tests:
+Test 1: pasado correctamente
+Test 2: pasado correctamente
+Test 3: pasado correctamente
+Test 4: pasado correctamente
+*/

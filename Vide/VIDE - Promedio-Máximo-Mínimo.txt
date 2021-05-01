@@ -1,0 +1,47 @@
+/* Consigna:
+Diseñe un algoritmo que utilice la función provista getEntradaTeclado(), e identifique el número máximo, el número mínimo y la media de todos los números retornados hasta el primer 0. 
+Es importante que el resultado a visualizar sea almacenado en la variable “resultado” con el siguiente formato: “Media: [media], Max: [número máximo] y Min: [número mínimo]”. Reemplazando con los valores calculados lo indicado entre corchetes.    */
+
+// Código inicial
+
+let entradaTeclado = [0]; //Valor por defecto
+let indice = 0;
+function getEntradaTeclado() {
+ const retorno = entradaTeclado[indice];
+ indice = indice + 1;
+ return retorno;
+}
+let resultado;
+
+entradaTeclado = [3, 3, 3, 3, 3, 0];
+
+
+
+// Código implementación
+// Comenza tu implementación en este editor
+let numeroIngresado = getEntradaTeclado();
+let maximo = numeroIngresado;
+let minimo = numeroIngresado;
+let contador = 0;
+let suma = 0;
+ while (numeroIngresado !== 0){
+    if (numeroIngresado < minimo){
+        minimo = numeroIngresado;
+    }else if (numeroIngresado > maximo){
+        maximo = numeroIngresado; }
+contador = contador +1;
+suma = suma + numeroIngresado;
+numeroIngresado = getEntradaTeclado();
+}
+let media = suma/contador;
+resultado = resultado = "Media: " + media + ", Max: " + maximo + " y Min: " + minimo;
+console.log(resultado);
+
+
+/* Reporte de Tests:
+Test 1: pasado correctamente
+Test 2: pasado correctamente
+Test 3: pasado correctamente
+Test 4: pasado correctamente
+Test 5: pasado correctamente
+*/
