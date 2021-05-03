@@ -1,0 +1,43 @@
+/* Consigna:
+Dada la variable “entradaTeclado”, la cual es un arreglo de tamaño N. Donde dicho tamaño N se encuentra almacenado en la variable “numero”. Escriba un programa que cuente la cantidad de números que son positivos, la cantidad de negativos y la cantidad de ceros presentes en el arreglo “entradaTeclado”. Es importante que el conteo se almacene en la variable “resultado” en el siguiente formato: “Hay [cantidad positivos] positivos, [cantidad negativos] negativos y [cantidad de ceros] ceros”. Reemplazando por la [cantidad] obtenida según corresponda y luego se visualice por pantalla.   */
+
+// Código inicial
+
+let entradaTeclado; 
+let numero;
+let resultado = "";
+
+
+entradaTeclado = [1,2,4,5,-12,-22];
+numero=6;
+
+
+
+
+// Código implementación
+// Comenza tu implementación en este editor
+let indice = 0;
+let sumaPositivos = 0;
+let sumaNegativos = 0;
+let sumaCeros = 0;
+
+for (indice = 0; indice < numero; indice ++){
+    if (entradaTeclado[indice] === 0){
+        sumaCeros = sumaCeros + 1;
+    }else if (entradaTeclado[indice] > 0){
+        sumaPositivos = sumaPositivos + 1;
+        }else if(entradaTeclado[indice] < 0){
+            sumaNegativos = sumaNegativos + 1;
+        }
+}
+resultado = "Hay " + sumaPositivos + " positivos, " + sumaNegativos + " negativos y " + sumaCeros + " ceros";
+console.log(resultado);
+
+
+/* Reporte de Tests:
+Test 1: pasado correctamente
+Test 2: pasado correctamente
+Test 3: pasado correctamente
+Test 4: pasado correctamente
+Test 5: pasado correctamente
+*/

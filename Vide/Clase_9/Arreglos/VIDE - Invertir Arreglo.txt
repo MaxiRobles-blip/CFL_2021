@@ -1,0 +1,34 @@
+/* Consigna:
+Dada la variable “entradaTeclado”, la cual es un arreglo de tamaño N. Donde dicho tamaño N se encuentra almacenado en la variable “numero”. Escriba un programa que almacene en la variable “resultado” los números del arreglo “entradaTeclado” pero del último al primero. Es importante que los números se encuentren separados por “,“ (coma), inclusive el último. Ej: sí “entradaTeclado” es [1,2,3]. La variable “resultado” debe ser “3,2,1,”   */
+
+// Código inicial
+
+let entradaTeclado; 
+let numero;
+let resultado = "";
+
+
+entradaTeclado = [1,2,1,2,1,3,1];
+numero=7;
+
+
+
+
+// Código implementación
+// Comenza tu implementación en este editor
+let cantidad = numero - 1;
+let arrayInvert = [numero];
+let indice = 0;
+
+for(indice = 0; indice < numero; indice ++){
+    resultado = resultado + entradaTeclado[cantidad - indice] + ",";
+}
+console.log(resultado);
+
+
+/* Reporte de Tests:
+Test 1: pasado correctamente
+Test 2: pasado correctamente
+Test 3: pasado correctamente
+Test 4: pasado correctamente
+*/
