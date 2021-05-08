@@ -1,0 +1,41 @@
+/* Consigna:
+Realice un programa que devuelva la potencia de un número. Los valores de la base y el exponente deben ser tomados de las variables provistas: “numBase” y “numExponente”. Sólo deben admitirse exponentes mayores o iguales a cero, de lo contrario el valor del resultado debe ser el mensaje: “Exponente inválido” (No te olvides del tilde en tu solución). 
+Recordar que el resultado de un número elevado a 0 es 1. Por último es importante que el resultado de la potencia sea primero almacenado en la variable resultado, y luego visualizarlo en consola.    */
+
+// Código inicial
+
+let numBase;
+let numExponente;
+let resultado; 
+
+numBase = -2;
+numExponente = 8;
+
+
+
+// Código implementación
+// Comenza tu implementación en este editor
+function calcularPotencia (base,exponente){
+   // let indice;
+    resultado = 1;
+    let contador = 0;
+    
+if (exponente >= 0 ){
+    for (indice = 0; indice < exponente; indice ++){
+      
+            resultado = resultado * base;
+       }
+    }else{
+        resultado = "Exponente inválido";
+    }
+console.log(resultado);
+}
+calcularPotencia (numBase,numExponente);
+
+/* Reporte de Tests:
+Test 1: pasado correctamente
+Test 2: pasado correctamente
+Test 3: pasado correctamente
+Test 4: pasado correctamente
+Test 5: pasado correctamente
+*/
