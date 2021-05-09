@@ -1,0 +1,72 @@
+/* Consigna:
+Dadas las variables “nombreAlumnos”, “nota1”, “nota2” y “nota3”, las cuales son arreglos de tamaño N. Donde dicho tamaño N se encuentra almacenado en la variable “numero”. Desarrolle un algoritmo que obtenga el promedio anual del alumno según el nombre indicado en la variable provista “alumno”. Es importante que el promedio se almacene en la variable “resultado”. En caso de que el nombre del alumno indicado no se encuentre en el arreglo “nombreAlumnos”, se debe almacenar en la variable “resultado” el mensaje: “Alumno no encontrado”. Por último visualice el valor de la variable “resultado” por pantalla. Luego de resolverlo, pensar en aprovechar los métodos y discutir como representar la información.    */
+
+// Código inicial
+
+let numero;
+let nombreAlumnos;
+let nota1;
+let nota2;
+let nota3;
+let alumno;
+let resultado;
+
+
+numero = 0;
+nombreAlumnos = []
+nota1 = [];
+nota2 = [];
+nota3 = [];
+
+alumno = "Matias";
+
+
+
+
+// Código implementación
+// Comenza tu implementación en este editor
+
+average = [numero];
+
+function uploadAverage (n1,n2,n3,average,numero){
+   
+   let index = 0;
+   
+    for(index = 0; index < numero; index ++){
+      
+      average[index] = (n1[index] + n2[index] + n3[index]) / 3; 
+    }
+    
+}
+
+function showStudent (nombreAlumnos,average,alumno,numero){
+    
+    let index = 0;
+    
+    
+    while (nombreAlumnos[index]!= alumno && index < numero){
+        index ++;
+    }
+    if (nombreAlumnos[index] == alumno){
+        resultado = average[index];
+    }else if (nombreAlumnos != alumno){
+        resultado = "Alumno no encontrado";
+    }
+}
+
+uploadAverage (nota1,nota2,nota3,average,numero);
+showStudent (nombreAlumnos,average,alumno,numero);
+console.log(resultado);
+
+
+
+
+
+
+/* Reporte de Tests:
+Test 1: pasado correctamente
+Test 2: pasado correctamente
+Test 3: pasado correctamente
+Test 4: pasado correctamente
+Test 5: pasado correctamente
+*/

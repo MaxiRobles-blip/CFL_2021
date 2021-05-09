@@ -1,0 +1,45 @@
+/* Consigna:
+Dadas las variables “v1” y “v2”, las cuales son arreglos de tamaño N. Donde dicho tamaño N se encuentra almacenado en la variable “numero”. Escriba la función multiplicarVector() que calcule el producto escalar de los arreglos provistos. Es importante que el retorno de la función se almacene  en la variable “resultado”. Por último visualice por pantalla el valor de “resultado”. Explicación “producto escalar”: si “A<a1, b1, c1>” y “B<a2,b2,c2>”, el producto escalar entre A y B en función de sus componentes está dado por: A・B = (a1 x a2) + (b1 x b2) + (c1 x c2)
+Ejemplo: “numero = 3”, “v1 = [0,1,2]”, y “v2 = [3,4,5]”, entonces (0x3)+(1x4)+(2x5) = 14   */
+
+// Código inicial
+
+let v1;
+let v2;
+let numero;
+let resultado;
+
+
+numero = 0;
+v1 = [];
+v2 = [];
+
+
+
+
+// Código implementación
+// Comenza tu implementación en este editor
+
+v3 = [numero];
+
+function multiplicarVector(v1,v2,v3,numero){
+    let index = 0;
+    let suma = 0;
+    
+    for (index = 0; index < numero; index ++){
+        v3[index] = v1[index] * v2[index];
+       suma = suma + v3[index];
+    }
+    resultado = suma;
+}
+
+multiplicarVector(v1,v2,v3,numero);
+console.log(resultado);
+
+/* Reporte de Tests:
+Test 1: pasado correctamente
+Test 2: pasado correctamente
+Test 3: pasado correctamente
+Test 4: pasado correctamente
+Test 5: pasado correctamente
+*/
