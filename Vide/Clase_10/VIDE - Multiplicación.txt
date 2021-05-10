@@ -1,0 +1,53 @@
+/* Consigna:
+Dadas las variables “v1”, “v2”, “v3” y “v4”, las cuales son arreglos de tamaño N. Donde dicho tamaño N se encuentra almacenado en la variable “numero”. Implemente un método llamado “multiplicarArreglo” que recibe como parámetros tres arreglos de enteros del mismo tamaño (arr1, arr2 y arr3). Los dos primeros arreglos (arr1 y arr2) contienen los números que se quieren multiplicar. Y el tercer arreglo (arr3) almacena el cálculo de la multiplicación de los dos arreglos mencionados previamente (arr1 y arr2). Luego utilice este método para multiplicar los arreglos provistos “v1”, “v2”, “v3” y “v4” y almacenar el arreglo final en la variable “resultado”. Ejemplo: “v1 = [1, 2, 3]”, “v2 = [4, 5, 6]”, “v3 = [2, 1, 2]” y  “v4 = [1,2,1]”. Entonces “resultado = [8,20,36]”. Aproveche las ventajas de métodos para resolver el ejercicio.    */
+
+// Código inicial
+
+let numero;
+let v1;
+let v2;
+let v3;
+let v4;
+let resultado;
+
+
+numero = 8;
+v1 = [1, 6, 3, 12, 56, 10, 4, 1];
+v2 = [5, 2, 32, 12, 5, 0, 4, 9];
+v3 = [1, 7, 3, 12, 6, 1, 4, 8];
+v4 = [7, 99, 3, 12, 56, 10, 4, 6];
+resultado = new Array(numero);
+
+
+
+
+// Código implementación
+// Comenza tu implementación en este editor
+
+function multiplyArray (v1,v2,v3,numero){
+    
+    let index = 0;
+
+    for(index = 0; index < numero; index ++){
+        
+        v3[index] = v1[index] * v2[index];
+    }
+}
+
+multiplyArray (v1,v2,resultado,numero);
+multiplyArray (resultado,v3,resultado,numero);
+multiplyArray (resultado,v4,resultado,numero);
+
+console.log(resultado);
+
+
+
+
+
+/* Reporte de Tests:
+Test 1: pasado correctamente
+Test 2: pasado correctamente
+Test 3: pasado correctamente
+Test 4: pasado correctamente
+Test 5: pasado correctamente
+*/
