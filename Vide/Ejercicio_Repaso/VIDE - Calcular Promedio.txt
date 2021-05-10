@@ -1,0 +1,42 @@
+/* Consigna:
+El DT de los infantes del equipo de fútbol desea saber el promedio de edad de los chicos. La edad de los chicos va de 3 a 7 años. Las edades se encuentran almacenadas en la variable “edadInfantes”, la cual es un arreglo de tamaño N, indicado por la variable “numInfantes”. 
+Escriba un programa que muestre todas las edades, almacene el promedio en la variable “resultado” y por último lo muestre por pantalla.    */
+
+// Código inicial
+
+let numInfantes;
+let edadInfantes;
+let resultado;
+
+
+numInfantes = 10;
+edadInfantes = [3,5,3,4,7,6,5,4,6,5];
+
+
+
+
+// Código implementación
+// Comenza tu implementación en este editor
+
+function showAverage (edadInfantes,numInfantes){
+    
+    let index = 0;
+    let promedio = 0;
+
+    for (index = 0; index < numInfantes; index ++){
+        
+        promedio = promedio + edadInfantes[index];
+    
+    }
+resultado = promedio / numInfantes;
+}
+
+showAverage (edadInfantes,numInfantes);
+
+console.log(resultado);
+
+/* Reporte de Tests:
+Test 1: pasado correctamente
+Test 2: pasado correctamente
+Test 3: pasado correctamente
+*/
