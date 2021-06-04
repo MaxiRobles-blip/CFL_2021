@@ -1,7 +1,6 @@
-
 body { 
 
-    background-color: beige;
+    background-color:skyblue;
 
 }
 
@@ -19,6 +18,50 @@ h2{
     color: blueviolet;
 }
 
-h3{
-    color: brown;
+.cursivaNegrita {
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.italicRoja{
+font-style:italic;
+color: red;
+}
+
+.countainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.bloqueDiv1{
+    text-align: center;
+    text-decoration: underline;
+    width: auto;
+
+}
+
+.bloqueDiv2{
+    text-align: center;
+    text-decoration: underline;
+    width: auto;
+
+}
+
+.bloqueDiv3{
+    text-align: center;
+    text-decoration: underline;
+    width: auto;
+
+}
+
+.recuadroImagenes{
+    border: 1px;
+    border-style: solid;
+    border-color: brown;
 }
