@@ -1,0 +1,10 @@
+.container{
+    display: flexbox;
+    align-content: space-around;
+}
+
+
+.btnSaludar,.respuesta{
+    margin-left: 3%;
+    margin-top: 2rem;
+}
