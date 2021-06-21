@@ -1,0 +1,22 @@
+.botonComenzar{
+
+    margin-top: 1%;
+    margin-bottom: 3%;
+    margin-left: 1%;
+}
+
+.botonParar{
+
+    margin-left: 1%;
+}
+
+.divAleatorio{
+    
+    width: 75px;
+    height: 75px;
+    background-color: blueviolet;
+    margin-top: 1%;
+    margin-left: 1%;
+    position: absolute;
+
+}

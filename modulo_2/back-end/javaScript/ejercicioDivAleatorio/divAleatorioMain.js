@@ -1,6 +1,6 @@
 "use strict";
 
-let unDiv = document.getElementById('aDiv');
+let divAleatorio = document.getElementById('aDiv');
 let botonAleatorio = document.querySelector('#botonDiv');
 botonAleatorio.addEventListener('click',cambiar);
 
@@ -19,12 +19,12 @@ function cambiar() {
    let left = Math.floor(Math.random()*580);
 
 
-   unDiv.style.backgroundColor = `rgb( ${red}, ${blue}, ${green})`;
+   divAleatorio.style.backgroundColor = `rgb( ${red}, ${blue}, ${green})`;
    
-   unDiv.style.width = `${widht}px`;
-   unDiv.style.height = `${height}px`;
+   divAleatorio.style.width = `${widht}px`;
+   divAleatorio.style.height = `${height}px`;
 
-   unDiv.style.top = `${top}px`;
-   unDiv.style.left = `${left}px`;
+   divAleatorio.style.top = `${top}px`;
+   divAleatorio.style.left = `${left}px`;
 
 }
