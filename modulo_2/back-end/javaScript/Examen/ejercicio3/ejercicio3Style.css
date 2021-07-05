@@ -1,0 +1,12 @@
+.container{
+    background-color: gray;
+}
+
+.row{
+    background-color: white;
+    
+}
+
+.col{
+    border-style: groove;
+}

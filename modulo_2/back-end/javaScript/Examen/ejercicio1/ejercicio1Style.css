@@ -1,0 +1,28 @@
+
+.cambiar { 
+
+    background-color:gray;
+
+}
+
+h1{
+    color: red;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    
+}
+
+.div2{
+    width: 500px;
+}
+
+.imagenPequeña{
+    width: 300px;
+}
