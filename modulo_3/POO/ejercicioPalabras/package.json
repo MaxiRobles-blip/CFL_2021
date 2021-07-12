@@ -1,19 +1,20 @@
 {
-  "name": "ejercicio2",
+  "name": "c",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tarea": "tsc --watch"
+    "watch": "tsc --watch"
   },
-  "author": "MR",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^16.3.1",
+    "@types/readline-sync": "^1.4.4"
+  },
   "dependencies": {
     "readline-sync": "^1.4.10"
-  },
-  "devDependencies": {
-    "@types/node": "^16.0.1"
   }
-  
 }
